@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SWS.Models;
+using SWS.Modelos;
+using SWS.Modelos.ViewModels;
 using System.Diagnostics;
 
-namespace SWS.Controllers
+namespace SWS.Areas.Inventario.Controllers
 {
+    [Area("Inventario")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
